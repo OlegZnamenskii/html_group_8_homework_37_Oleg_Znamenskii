@@ -1,0 +1,95 @@
+body {
+	font-family: "Myriad Pro", Helvetica, sans-serif;
+	color: #666666;
+	line-height:1.4;
+	font-size: 13px;
+}
+.container {
+	max-width:940px;
+	margin:0 auto;
+	text-align: left;
+	padding: 10%;
+}
+.text {
+	float: left;
+	width: 100%;
+	margin-bottom: 10%;
+}
+
+.ic {
+	position: relative;
+	display: inline-block;
+	padding: 7%;
+	cursor: pointer;
+}
+.ic::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 34px;
+	height: 34px;
+	background: url(../img/ic-sprite.png) 0 0 no-repeat;
+
+}
+.ic-one::before {
+	background-position: 0 0;
+}
+.ic-two::before {
+	background-position: 50% 0;
+}
+.ic-three::before {
+	background-position: 100% 0;
+}
+.ic:hover {
+	transform: rotate(360deg);
+	transition: all 1.5s;
+}
+.img-wrap {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff
+}
+.btn {
+	background: #FA7205;
+	padding: 1% 2%;
+	transition: all .5s;
+	display: inline-block;
+	margin: 1% auto;
+	width: 37%;
+	text-align: center;
+}
+.btn-menu {
+	position: relative;
+
+}
+.btn-menu::after {
+	content: "";
+	position: absolute;
+	display: none;
+	top: 60%;
+	right: 8%;
+	width: 19px;
+	height: 11px;
+	transition: all 1s;
+	background: url(../img/ic-arrow.png) 0 0 no-repeat;
+}
+.btn:hover {
+	background-color: #fff;
+	box-shadow: 0 0 0 2px #FA7205; inset;
+	color: #FA7205;
+}
+.btn-menu:hover::after {
+	display: inline-block;
+}
